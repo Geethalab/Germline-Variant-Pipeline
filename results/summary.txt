@@ -1,0 +1,12 @@
+Sample: SRR062634
+
+Pipeline Summary:
+
+- Raw reads processed
+- Reads aligned to hg38 reference genome
+- Variants called using GATK HaplotypeCaller
+- SNPs and INDELs filtered
+- Functional annotation performed
+
+Outputs:
+- important_variants.txt → key variants
