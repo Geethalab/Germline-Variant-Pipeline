@@ -82,3 +82,22 @@ bash scripts/02_alignment.sh
 - Identified SNPs and INDELs using the GATK pipeline  
 - Performed functional annotation of variants  
 - Extracted biologically relevant variants for interpretation  
+
+## 📊 Example Results
+
+The pipeline was tested on a subset of WGS data (SRR062634).
+
+### Output Summary
+- Variants successfully called using GATK HaplotypeCaller
+- SNPs and INDELs filtered to retain high-confidence variants
+- Functional annotation performed using Funcotator
+
+### Key Output Files
+- `results/important_variants.txt` → prioritized biologically relevant variants  
+- Filtered VCF files containing SNPs and INDELs  
+
+### Interpretation
+This demonstrates the ability to:
+- Process raw sequencing data into interpretable results  
+- Apply variant filtering strategies  
+- Perform downstream functional annotation  
