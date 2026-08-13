@@ -1,0 +1,20 @@
+# Large genomics files
+*.bam
+*.bai
+*.sam
+*.fastq
+*.fastq.gz
+*.vcf.gz
+*.tbi
+*.gz
+*.zip
+
+# Pipeline folders (too large)
+aligned_reads/
+reads/
+supporting_files/
+funcotator_dataSources/
+logs/
+
+# Mac files
+.DS_Store
