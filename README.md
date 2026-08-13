@@ -1,14 +1,14 @@
 # 🧬 Germline Variant Calling Pipeline
 
-A reproducible bioinformatics workflow for germline variant discovery and functional annotation from whole genome sequencing (WGS) data.
+> ⚠ ️ Note: This pipeline uses a small subset of whole genome sequencing (WGS) data for demonstration purposes.
 
 ---
 
 ## 📌 Overview
 
-This project demonstrates an end-to-end variant calling pipeline using industry-standard tools including GATK, BWA, SAMtools, and Funcotator.
+This project demonstrates an end-to-end germline variant calling pipeline using industry-standard bioinformatics tools.
 
-The workflow processes raw FASTQ sequencing data and produces annotated variant calls (VCF), along with quality control metrics.
+The workflow processes raw FASTQ sequencing data and produces high-confidence variant calls (VCF), along with quality control metrics and functional annotations.
 
 ---
 
@@ -49,7 +49,31 @@ The workflow processes raw FASTQ sequencing data and produces annotated variant 
 
 - **Data Formats:** FASTQ, BAM, VCF  
 
----
 
 ## 📁 Project Structure
 
+Germline-Variant-Pipeline/
+│── scripts/        # Pipeline scripts
+│── results/        # Final outputs (small demo files)
+│── docs/           # Documentation
+│── README.md
+│── .gitignore
+
+## ▶️ How to Run
+
+```bash
+# Step 1: Download data
+bash scripts/01_download_data.sh
+
+# Step 2: Run alignment and variant calling
+bash scripts/02_alignment.sh
+```
+
+---
+
+## 📌 Key Results
+
+- Successfully processed raw FASTQ data into high-quality variant calls  
+- Identified SNPs and INDELs using the GATK pipeline  
+- Performed functional annotation of variants  
+- Extracted biologically relevant variants for interpretation  
