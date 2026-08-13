@@ -1,6 +1,6 @@
 # 🧬 Germline Variant Calling Pipeline
 
-> ⚠ ️ Note: This pipeline uses a small subset of whole genome sequencing (WGS) data for demonstration purposes.
+> ⚠️ Note: This pipeline uses a small subset of whole genome sequencing (WGS) data for demonstration purposes.
 
 ---
 
@@ -15,24 +15,24 @@ The workflow processes raw FASTQ sequencing data and produces high-confidence va
 ## ⚙️ Workflow
 
 1. **Quality Control**
-   - FastQC
+   - FastQC  
 
 2. **Read Alignment**
-   - BWA-MEM → alignment to reference genome (hg38)
+   - BWA-MEM → alignment to reference genome (hg38)  
 
 3. **Post-processing**
-   - SAMtools sorting
-   - Picard duplicate marking
-   - Base Quality Score Recalibration (BQSR)
+   - SAMtools sorting  
+   - Picard duplicate marking  
+   - Base Quality Score Recalibration (BQSR)  
 
 4. **Variant Calling**
-   - GATK HaplotypeCaller
+   - GATK HaplotypeCaller  
 
 5. **Variant Filtering**
-   - SNP and INDEL filtering
+   - SNP and INDEL filtering  
 
 6. **Functional Annotation**
-   - GATK Funcotator
+   - GATK Funcotator  
 
 ---
 
@@ -49,15 +49,20 @@ The workflow processes raw FASTQ sequencing data and produces high-confidence va
 
 - **Data Formats:** FASTQ, BAM, VCF  
 
+---
 
 ## 📁 Project Structure
 
+```
 Germline-Variant-Pipeline/
 │── scripts/        # Pipeline scripts
 │── results/        # Final outputs (small demo files)
 │── docs/           # Documentation
 │── README.md
 │── .gitignore
+```
+
+---
 
 ## ▶️ How to Run
 
