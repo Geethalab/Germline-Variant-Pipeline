@@ -78,26 +78,32 @@ bash scripts/02_alignment.sh
 
 ## 📌 Key Results
 
-- Successfully processed raw FASTQ data into high-quality variant calls  
-- Identified SNPs and INDELs using the GATK pipeline  
-- Performed functional annotation of variants  
-- Extracted biologically relevant variants for interpretation  
+- Processed paired-end WGS reads (subset dataset for demonstration)
+- Total variants identified: 1,750  
+  - SNPs: 1,630  
+  - INDELs: 120  
+- High-confidence variants retained after filtering (PASS variants)
+- Functional annotation performed using GATK Funcotator
+- Key biologically relevant variants extracted (see `results/important_variants.txt`)
+- Implementation follows GATK Best Practices workflow
+
+---
 
 ## 📊 Example Results
 
-The pipeline was tested on a subset of WGS data (SRR062634).
+The pipeline was tested on a  WGS subset dataset (SRR062634).
 
 ### Output Summary
-- Variants successfully called using GATK HaplotypeCaller
-- SNPs and INDELs filtered to retain high-confidence variants
-- Functional annotation performed using Funcotator
+- Variants successfully called using GATK HaplotypeCaller  
+- SNPs and INDELs filtered to retain high-confidence variants  
+- Functional annotation performed using Funcotator  
 
 ### Key Output Files
-- `results/important_variants.txt` → prioritized biologically relevant variants  
+- `results/important_variants.txt` → prioritized variants  
 - Filtered VCF files containing SNPs and INDELs  
 
-### Interpretation
-This demonstrates the ability to:
-- Process raw sequencing data into interpretable results  
-- Apply variant filtering strategies  
-- Perform downstream functional annotation  
+### What this project shows
+- End-to-end NGS data processing capability  
+- Variant calling and filtering using GATK  
+- Functional annotation and result interpretation  
+- Handling and structuring large genomic datasets  
